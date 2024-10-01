@@ -1,6 +1,6 @@
 WITH tb_freq AS (
 
-    SELECT DISTINCT seller_state,
+    SELECT DISTINCT seller_state AS DescUF,
         COUNT(*) AS freqAbsoluta
     FROM tb_sellers
     GROUP BY seller_state
